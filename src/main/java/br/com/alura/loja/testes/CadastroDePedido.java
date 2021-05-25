@@ -45,7 +45,11 @@ public class CadastroDePedido {
 		
 		relatorio.forEach(System.out::println);
 		
+		Pedido pedido1 = pedidoDao.buscarPedidoComCliente(1l);
+		
 		em.close();
+		
+		System.out.println(pedido1);
 	}
 	
 	private static void popularBancoDeDados() {
